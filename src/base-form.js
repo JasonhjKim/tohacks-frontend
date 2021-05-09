@@ -71,7 +71,7 @@ export default class BaseForm extends Component {
 
         formData.append("models", this.state.selected);
 
-        axios.post('http://69.172.162.104:5000/api/v1/finetune', formData)
+        axios.post('http://69.172.162.104:5000/api/v1/basemodel', formData)
             .then(res => console.log(res))
             .catch(err => console.log(err)) 
     }
